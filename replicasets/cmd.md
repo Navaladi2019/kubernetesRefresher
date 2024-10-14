@@ -1,0 +1,5 @@
+- kubectl replace -f <filename> to apply chanes to replica set from file
+- kubectl edit replicaset <name> to edit in vim 
+- kubectl scale replicaset <name> --replicas = 5(number you want to scale to)
+- kubectl get rs
+- kubectl create rs -f <filename>
