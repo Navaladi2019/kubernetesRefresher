@@ -9,3 +9,8 @@ spec:
   containers:
   - name: redis-container
     image: redis
+    env:
+      - name: UserName
+        value: root
+      - name: Password
+        value: pass    # here by this way we can pass in the env values to pods
