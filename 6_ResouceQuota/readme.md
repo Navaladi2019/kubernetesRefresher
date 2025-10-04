@@ -1,0 +1,1 @@
+to specify resource for namespace

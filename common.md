@@ -35,3 +35,12 @@ nerdctl supports
  crictl is aware of pods
 
  ![alt text](image.png)
+
+
+ https://github.com/kodekloudhub/example-voting-app/tree/master/k8s-specifications
+
+
+ --dry-run=client to check if the command will work without any issue
+
+
+ we can also use kubectl replace -f <filename> --force

@@ -1,5 +1,7 @@
 kubectl get all (to get all)
 
+here the spec file is same as replicasets
+
 //deployments enclose replicasets
 
 - kubectl rollout status deployment/<deployment name>
@@ -9,7 +11,7 @@ kubectl get all (to get all)
 
 
 deployment strategy
-    -Recreate (destroy all and create new instance) 
+    - Recreate (destroy all and create new instance) 
     - ROLLING UPDATE    (DEFAULT DEPLOYMENT STRATEGY)
 
 

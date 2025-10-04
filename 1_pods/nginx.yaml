@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx
+  namespace: default
+  labels:
+    name: nginx
+    type: server
+spec:
+  containers:
+  - name: nginx-container
+    image: nginx
+    env:
+      - name: UserName
+        value: password
+      - name: configfilePath
+        value: /app/var/ngx.conf
+    ports:
+     - containerPort: 80
+       name: vote

@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: myreplicaset
+  labels:
+    app: myapp
+    type: front-end
+spec:
+  replicas: 3
+  selector:
+    matchLabels:   # we can add wither match expression or match labels for selector
+      type: front-end
+  template:
+    metadata:
+      labels:
+        type: front-end
+    spec:
+      containers:
+        - name: nginx-gateway
+          image: nginx
