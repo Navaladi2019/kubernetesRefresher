@@ -34,3 +34,6 @@ follow using the link https://kubernetes.io/docs/tasks/administer-cluster/encryp
 
 sometimes instead of kubernetes secret we can use azure keyvalut with appropriate driver to store secrets 
  we just need to create secret provider class 
+
+# if we do secret key ref then if the value od secret changes 
+# then we need to restart the pod to have the secrets refreshed in env so to avoid it we can use volumne mount to have the key linked as mount in that way even if secret is changed mount is refreshed
