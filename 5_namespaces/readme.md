@@ -32,7 +32,7 @@ kubectl create namespace <namespace name>
 
 
 
-kubectl condig set-context $(kubectl config current-context) --namespace=<name> to set default namespace for the current context terminal
+kubectl config set-context $(kubectl config current-context) --namespace=<name> to set default namespace for the current context terminal
 
 
 kubectl get pods --all-namespaces

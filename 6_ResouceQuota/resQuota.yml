@@ -6,7 +6,7 @@ metadata:
 spec:
   hard:
     pods: "10"
-    requests.cpu: "4"
+    requests.cpu: "4" # minimum guarented resource
     requests.memory: 5Gi
-    limits.cpu: "10"
+    limits.cpu: "10"   # maximum allowed resource
     limits.memory: 10Gi
